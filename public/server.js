@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, '/public')));
 app.listen(3000,()=>{
     console.log('Configurando server Express...')
 })
-io.listen(5000)
+io.listen(8080)
 
 io.on('connection', (socket)=>{
     console.log('conectado')
